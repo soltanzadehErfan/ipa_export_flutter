@@ -19,4 +19,4 @@ Follow these steps to integrate the Flutter IPA Exporter into your Flutter proje
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/soltanzadehErfan/ipa_export_flutter.git

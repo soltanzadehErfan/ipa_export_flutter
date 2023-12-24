@@ -1,16 +1,24 @@
-# ipa_export_flutter
+# Flutter IPA Exporter
 
-A new Flutter project.
+![Flutter](https://img.shields.io/badge/Flutter-2.8-blue?style=flat&logo=flutter)
+![License](https://img.shields.io/github/license/yourusername/your-repo)
+[![GitHub issues](https://img.shields.io/github/issues/yourusername/your-repo)](https://github.com/yourusername/your-repo/issues)
+
+## Overview
+
+The Flutter IPA Exporter is a tool that allows you to export IPA files for iOS devices directly from your Flutter project, eliminating the need for a Mac device. This is particularly useful for Flutter developers who primarily work on non-Mac platforms but need to generate IPA files for iOS distribution.
+
+## Features
+
+- **Cross-Platform Compatibility**: Export IPA files without the need for a Mac machine.
+- **GitHub Actions Integration**: Seamless integration with GitHub Actions for automated IPA builds.
+- **Easy Configuration**: Simple setup with a few configuration steps.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow these steps to integrate the Flutter IPA Exporter into your Flutter project:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Clone the Repository**:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git

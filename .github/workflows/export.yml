@@ -33,8 +33,13 @@ jobs:
           mv build/ios/iphoneos/Runner.app Payload
 
       - name: Create IPA
-        run: zip -qq -r -9 FlutterIpaExport.ipa Payload
+        run: zip -qq -r -9 FlutterIpaExport.ipa .
         working-directory: build/ios/iphoneos
+
+      - name: List Contents
+        run: ls -R
+        working-directory: build/ios/iphoneos
+
 
       - name: Upload to Release
         uses: svenstaro/upload-release-action@v2

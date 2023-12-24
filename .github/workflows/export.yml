@@ -1,11 +1,11 @@
-name: iOS-ipa-build
+name: Build iOS Ipa
 
 on:
   workflow_dispatch:
 
 jobs:
   build-ios:
-    name: 🎉 iOS Build
+    name: Build iOS Ipa
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -38,4 +38,4 @@ jobs:
           file: build/ios/iphoneos/FlutterIpaExport.ipa
           tag: v1.0
           overwrite: true
-          body: "This is first release"
+          body: "Congrats"

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Main App
 void main() {
   runApp(
     const MyApp(),
@@ -7,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,70 +31,72 @@ class HomePage extends StatelessWidget {
         title: const Text('Flutter Ipa Export'),
         centerTitle: true,
       ),
-      body: const Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: 8),
-          Divider(
-            color: Colors.amber,
-            indent: 60,
-            endIndent: 60,
-          ),
-          SizedBox(height: 8),
-          Text(
+          customSizedBox(),
+          customDivider(),
+          customSizedBox(),
+          const Text(
             'Hello There',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 4,
-            ),
+            style: boldTextStyle,
           ),
-          SizedBox(height: 8),
-          Text(
+          customSizedBox(),
+          const Text(
             'This is Erfan',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 4,
-            ),
+            style: boldTextStyle,
           ),
-          SizedBox(height: 8),
-          Text(
-            "Let's Export Our Ipa File",
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 4,
-            ),
+          customSizedBox(),
+          const Text(
+            "Let's Export Our Ipa",
+            style: boldTextStyle,
           ),
-          SizedBox(height: 8),
-          Divider(
-            color: Colors.amber,
-            indent: 60,
-            endIndent: 60,
-          ),
-          SizedBox(height: 8),
+          customSizedBox(),
+          customDivider(),
+          customSizedBox(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Github: soltanzadehErfan',
-                style: TextStyle(letterSpacing: 1),
+                style: normalTextStyle,
               ),
-              SizedBox(height: 4),
-              Text(
+              customSizedBox(height: 4),
+              const Text(
                 'Linkedin: erfan-soltanzadeh',
-                style: TextStyle(letterSpacing: 1),
+                style: normalTextStyle,
               ),
-              SizedBox(height: 4),
-              Text(
+              customSizedBox(height: 4),
+              const Text(
                 'Email: soltanzadeh836@gmail.com',
-                style: TextStyle(letterSpacing: 1),
+                style: normalTextStyle,
               ),
             ],
-          )
+          ),
         ],
       ),
     );
   }
+}
+
+// Constants
+const TextStyle boldTextStyle = TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 4,
+);
+
+const TextStyle normalTextStyle = TextStyle(letterSpacing: 1);
+
+// Helper functions
+Widget customSizedBox({double height = 8}) {
+  return SizedBox(height: height);
+}
+
+Widget customDivider() {
+  return const Divider(
+    color: Colors.amber,
+    indent: 60,
+    endIndent: 60,
+  );
 }

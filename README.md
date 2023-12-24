@@ -21,5 +21,10 @@ Follow these steps to integrate the Flutter IPA Exporter into your Flutter proje
    ```bash
    git clone https://github.com/soltanzadehErfan/ipa_export_flutter.git
 
-## More
-https://medium.com/@soltanzadeh836/comprehensive-guide-ios-ipa-export-for-flutter-projects-using-github-actions-no-mac-required-abe243300853
+## Comprehensive Guide
+
+For a more detailed guide on setting up iOS IPA export for your Flutter projects using GitHub Actions without the need for a Mac, check out the comprehensive guide: [Comprehensive Guide: iOS IPA Export for Flutter Projects using GitHub Actions (No Mac Required)](https://medium.com/@soltanzadeh836/comprehensive-guide-ios-ipa-export-for-flutter-projects-using-github-actions-no-mac-required-abe243300853).
+
+This guide provides step-by-step instructions and additional insights to ensure a smooth integration of the Flutter IPA Exporter into your workflow.
+
+Happy coding and exporting! 🚀

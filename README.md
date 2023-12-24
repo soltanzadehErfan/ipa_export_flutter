@@ -20,3 +20,7 @@ Follow these steps to integrate the Flutter IPA Exporter into your Flutter proje
 
    ```bash
    git clone https://github.com/soltanzadehErfan/ipa_export_flutter.git
+
+## More
+
+https://medium.com/@soltanzadeh836/comprehensive-guide-ios-ipa-export-for-flutter-projects-using-github-actions-no-mac-required-abe243300853

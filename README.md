@@ -1,8 +1,6 @@
 # Flutter IPA Export with GitHub Actions
 
-![Flutter](https://img.shields.io/badge/Flutter-2.8-blue?style=flat&logo=flutter)
-![License](https://img.shields.io/github/license/yourusername/your-repo)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/your-repo)](https://github.com/yourusername/your-repo/issues)
+[![features](https://skillicons.dev/icons?i=flutter,dart,github)](https://skillicons.dev)
 
 ## Overview
 
